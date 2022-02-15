@@ -1,0 +1,556 @@
+From:	Rosmorduc Vinca <vrosmorduc@groupcls.com>
+Sent:	Friday 29 October 2021 16:56
+To:	Hayley Evers-King; Christine Traeger Chatterjee
+Cc:	lbi; Oliver Clements
+Subject:	RE: Jupyter Notebooks on S6 for training
+
+WARNING: This email originated outside the organisation. Treat links and attachments with caution.
+Here is a Google Drive link (not restricted). 
+https://drive.google.com/drive/folders/1M0j0NJsKj_vZVZlvAHVGljzf286sXtiQ?usp=sharing
+note that some of the data are in their native folder, one I re-created the folder to be parallel with the 
+one already distributed (not sure it will be the exact name, especially since I’ve just seen from the output 
+of the S6-VT meeting that a reprocessing will be done early next year. The production day/hour will be 
+different in the file which will be distributed in the end). The last two (L2 files for the waveform 
+notebook) are out of any folder (part of the idea of the new naming scheme, anyway). 
+ 
+Vinca
+ 
+De : Hayley Evers-King <Hayley.EversKing@eumetsat.int>  
+Envoyé : vendredi 29 octobre 2021 16:34 
+À : Rosmorduc Vinca <vrosmorduc@groupcls.com>; Christine Traeger Chatterjee 
+<Christine.Traeger@eumetsat.int> 
+Cc : lbi <lbi@pml.ac.uk>; Oliver Clements <olcl@pml.ac.uk> 
+Objet : RE: Jupyter Notebooks on S6 for training
+ 
+This is awesome Vinca, thank you! Definitely not cheating to use some of the data that’s upcoming – 
+that’s being prepared :) 
+ 
+Could you put the example files on a google drive/dropbox or something? Just for ease when we test and 
+integrate them in to git. If not, no worries, I can probably track down the files. 
+ 
+Olly – I’ll put a first version on these on to git in the correct repository. We’ll need an overview notebook, 
+and one on data access (though for S6 this is a bit tricky as it’s just FTP and data centre for 
+now)…perhaps I best write those.
+ 
+Vinca – I’ll come back to you with any questions once I’ve looked through in more detail.
+ 
+Have a good weekend all!
+ 
+Hayley 
+ 
+--
+Dr Hayley Evers-King 
+Marine Applications Expert
+My nominal working hours are 8am – 1630pm each day. 
+ 
+EUMETSAT
+Eumetsat-Allee 1
+64295 Darmstadt
+Germany
+ 
+Tel: +49 6151 807 8609
+E-mail: Hayley.EversKing@eumetsat.int
+Twitter: @HayleyEversKing
+ 
+Honorary Fellow of Plymouth Marine Laboratory – www.pml.ac.uk
+ 
+From: Rosmorduc Vinca <vrosmorduc@groupcls.com>  
+Sent: Friday 29 October 2021 16:26 
+To: Christine Traeger Chatterjee <Christine.Traeger@eumetsat.int>; Hayley Evers-King 
+<Hayley.EversKing@eumetsat.int> 
+Cc: lbi <lbi@pml.ac.uk> 
+Subject: RE: Jupyter Notebooks on S6 for training
+ 
+WARNING: This email originated outside the organisation. Treat links and attachments with caution.
+Hi,
+ 
+Please find attached a first draft for the S6 notebooks. 
+Note that I cheated a bit – some data are not yet publicly available. With the data the notebook is much 
+too big to be sent by e-mail, though. How do you want to proceed? 
+ 
+Best regards,
+Vinca
+ 
+De : Christine Traeger Chatterjee <Christine.Traeger@eumetsat.int>  
+Envoyé : mercredi 22 septembre 2021 16:34 
+À : Hayley Evers-King <Hayley.EversKing@eumetsat.int>; Rosmorduc Vinca <vrosmorduc@groupcls.com> 
+Cc : lbi <lbi@pml.ac.uk> 
+Objet : RE: Jupyter Notebooks on S6 for training
+ 
+Dear both,
+ 
+Thanks for your thoughts and for your collaboration on this!
+ 
+@Hayley: Unfortunately I get a 404 “Page not found” when I click on the links you provided.
+ 
+I will put the following in the next WPD:
+Provide 3 Jupyer Notebooks on S6, following the example of the “learn-sral” modules provided on gitlab 
+(https://gitlab.eumetsat.int/eo-lab-usc-open/ocean/eumetsat_ocean_training).
+I hope this is fine – let me know if not. We can still adjust it.
+ 
+Thanks!
+ 
+Cheers,
+Christine
+ 
+ 
+From: Hayley Evers-King <Hayley.EversKing@eumetsat.int>  
+Sent: Wednesday 22 September 2021 11:32 
+To: Rosmorduc Vinca <vrosmorduc@groupcls.com> 
+Cc: Christine Traeger Chatterjee <Christine.Traeger@eumetsat.int>; lbi <lbi@pml.ac.uk> 
+Subject: RE: Jupyter Notebooks on S6 for training
+ 
+All sounds great Vinca. Agree the ‘nuts and bolts’ of the formats etc can be dull, but a really necessary 
+place to start I think. We can look at more exciting things as we get more data and can come up with 
+case studies etc :) 
+ 
+Yes, definitely do emphasise the continuity – its been a key point of the S6 comms so that aligns nicely.
+ 
+Hayley 
+ 
+--
+Dr Hayley Evers-King 
+Marine Applications Expert
+Please note that I am on part time maternity leave from the 31st May. My nominal working hours are 
+8am – 12pm each day. Details of maternity cover can be found here. 
+ 
+EUMETSAT
+Eumetsat-Allee 1
+64295 Darmstadt
+Germany
+ 
+Tel: +49 6151 807 8609
+E-mail: Hayley.Evers-King@eumetsat.int
+Twitter: @HayleyEversKing
+ 
+Honorary Fellow of Plymouth Marine Laboratory – www.pml.ac.uk
+ 
+From: Rosmorduc Vinca <vrosmorduc@groupcls.com>  
+Sent: Wednesday 22 September 2021 11:21 
+To: Hayley Evers-King <Hayley.EversKing@eumetsat.int> 
+Cc: Christine Traeger Chatterjee <Christine.Traeger@eumetsat.int>; lbi <lbi@pml.ac.uk> 
+Subject: RE: Jupyter Notebooks on S6 for training
+ 
+WARNING: This email originated outside the organisation. Treat links and attachments with caution.
+Hi,
+ 
+For S6, the first point will be to adapt reading codes… they will be quite different with the use of groups 
+in the netCDF files. Then there’s the parameters’ names and the flags which are different from S3, and 
+even slightly from Jason-3. The fact that the waveforms are not anymore in the L2 “expanded” data, too. 
+Not the most ‘enthusiasming’ points, I’m afraid, but necessary to users. 
+ 
+As a rule, in S6 case I would tend to stress more the continuity (with Jason-3) than the differences (with 
+S3) – the main objective of this mission is the continuity of measurements, for climate records in 
+particular (but climate records are hard to demonstrate in a notebook). With improvements, sure. I’ll try 
+to think about a way of mentioning both continuity and improvements somewhere in the notebooks. 
+ 
+Cheers
+Vinca
+De : Hayley Evers-King <Hayley.EversKing@eumetsat.int>  
+Envoyé : mercredi 22 septembre 2021 10:08 
+À : Rosmorduc Vinca <vrosmorduc@groupcls.com>; Christine Traeger Chatterjee 
+<Christine.Traeger@eumetsat.int> 
+Cc : lbi <lbi@pml.ac.uk> 
+Objet : RE: Jupyter Notebooks on S6 for training
+ 
+Hi Vinca,
+ 
+Thanks – it’s really helpful to have your thoughts on the learning objectives/narrative you had in mind :) 
+I can definitely find a more suitable track that will support the examples. Will add to the issues list in git 
+to be addressed in the coming months.
+ 
+For S6 – did you have thoughts on adapting the notebooks to show some of the differences between the 
+different altimeters? I was thinking with the waveforms one to have some comment on the interleaved 
+mode etc? 
+ 
+Cheers,
+ 
+Hayley 
+ 
+--
+Dr Hayley Evers-King 
+Marine Applications Expert
+Please note that I am on part time maternity leave from the 31st May. My nominal working hours are 
+8am – 12pm each day. Details of maternity cover can be found here. 
+ 
+EUMETSAT
+Eumetsat-Allee 1
+64295 Darmstadt
+Germany
+ 
+Tel: +49 6151 807 8609
+E-mail: Hayley.Evers-King@eumetsat.int
+Twitter: @HayleyEversKing
+ 
+Honorary Fellow of Plymouth Marine Laboratory – www.pml.ac.uk
+ 
+From: Rosmorduc Vinca <vrosmorduc@groupcls.com>  
+Sent: Wednesday 22 September 2021 09:24 
+To: Hayley Evers-King <Hayley.EversKing@eumetsat.int>; Christine Traeger Chatterjee 
+<Christine.Traeger@eumetsat.int> 
+Cc: lbi <lbi@pml.ac.uk> 
+Subject: RE: Jupyter Notebooks on S6 for training
+ 
+Hi,
+ 
+Thanks. 
+OK for me. I’ll have a look at the first one, but will concentrate on notebooks 3-5.
+ 
+Yes, the track one can be used with almost any track (ideally with a majority of ocean along, but that’s 
+most of them), while the SLA or waveforms ones show each a given phenomenon.  
+For the SLA, I’m almost always using the same track numbers (depending on the satellite, of course) from 
+a recent cycle, going over either Gulf Stream or Kuroshio (the latest when I did training in Asia).  Any 
+cycle can do, but some tracks are definitely more showy than others – the ones crossing a strong current, 
+mostly. Could be Agulhas, ACC… too, of course.  
+For the waveform one : either you only plot a waveform anywhere (over open ocean) and that’s it but it 
+is making the notebook quite short and I feel it is missing a kind of ocean-related objective. What I’ve 
+been doing is notebooks for a given storm, going from a waveform within the storm (vs out of it) to L4 
+SWH though L2, L2P and L3, trying to use a recent event (could be e.g. Hurricane Larry lately ; I did a 
+Typhoon Surigae in April, etc.). If you want a clear difference between a calm sea and a rough one on 
+waveforms, a strong storm make the thing more obvious, but then you have to be very selective with 
+your data. However, since you most often have at least one or two persons in the training audience who 
+are interested in SWH, I felt I was providing them with the information they need, too, with this storm 
+notebook.
+ 
+If you choose a Gulf-Stream track going over a winter storm (which shouldn’t be that hard to find, and 
+could be renewed every year, more or less), you could use the same file all along for S3, I suppose. But 
+not any file. 
+Best,
+Vinca
+ 
+De : Hayley Evers-King <Hayley.EversKing@eumetsat.int>  
+Envoyé : mardi 21 septembre 2021 21:06 
+À : Christine Traeger Chatterjee <Christine.Traeger@eumetsat.int>; Rosmorduc Vinca 
+<vrosmorduc@groupcls.com> 
+Cc : lbi <lbi@pml.ac.uk> 
+Objet : RE: Jupyter Notebooks on S6 for training
+ 
+Hi both,
+ 
+Ocean code in general is here: https://gitlab.eumetsat.int/eo-lab-usc-open/ocean 
+ 
+You’ll see all the modules. They are gathered in to one complete set under 
+https://gitlab.eumetsat.int/eo-lab-usc-open/ocean/eumetsat_ocean_training (set as submodules, so not 
+duplicated). There’s still quite a bit of tidying to do, but I’m chipping away at it as I find spare minutes.
+ 
+Vinca – I’ve attached the learn-sral module, which has three scripts, which I believe were yours originally, 
+formats etc have been changed a bit. I recently updated the default file, so I could use script on the 
+tracks for another demo…but I see now that doesn’t quite work for the scripts on SLA and waveforms as 
+you look at specific regions, so we’ll probably need to select another. No problem, I was just using 
+examples that could work on wekeo too. The S3 data is accessible via notebook 2, and so is not saved in 
+the git repo. The Jason data is there for now, we’ll need to think about integrating that a bit more in to 
+the access notebook. Don’t worry about that for now.
+ 
+The idea would be to create an equivalent for the S6 altimetry, so we’d need to do S6 specific versions of 
+the 5 notebooks. 1 is just descriptive, you can do it if you like, but it’s also fine for me to do it. The 2nd 
+one on access will need to be different, and we may well want to wait as the data access is going to 
+change as we finish commissioning and our new data services roll out. So I think if you come up with S6 
+equivalents of notebooks 3-5 that would be great. The other bits (readme etc) you can update for S6 if 
+you like, but I can also do that when I push your new content to git.
+ 
+Any questions, just let me know. 
+ 
+Best wishes,
+ 
+Hayley 
+ 
+--
+Dr Hayley Evers-King 
+Marine Applications Expert
+Please note that I am on part time maternity leave from the 31st May. My nominal working hours are 
+8am – 12pm each day. Details of maternity cover can be found here. 
+ 
+EUMETSAT
+Eumetsat-Allee 1
+64295 Darmstadt
+Germany
+ 
+Tel: +49 6151 807 8609
+E-mail: Hayley.Evers-King@eumetsat.int
+Twitter: @HayleyEversKing
+ 
+Honorary Fellow of Plymouth Marine Laboratory – www.pml.ac.uk
+ 
+From: Christine Traeger Chatterjee <Christine.Traeger@eumetsat.int>  
+Sent: Monday 20 September 2021 14:54 
+To: Rosmorduc Vinca <vrosmorduc@groupcls.com>; Hayley Evers-King 
+<Hayley.EversKing@eumetsat.int> 
+Cc: lbi <lbi@pml.ac.uk> 
+Subject: RE: Jupyter Notebooks on S6 for training
+ 
+@Hayley: is 30 Novemer sufficient as a deadline for the S6 notebooks?
+@Vinca: would this be doable for you? And how much time do you think will it take you to create and 
+provide those JNs (number of working days)?
+ 
+Thanks.
+ 
+Cheers,
+Christine
+ 
+From: Christine Traeger Chatterjee  
+Sent: Monday 20 September 2021 13:44 
+To: 'Rosmorduc Vinca' <vrosmorduc@groupcls.com>; Hayley Evers-King 
+<Hayley.EversKing@eumetsat.int> 
+Cc: lbi <lbi@pml.ac.uk> 
+Subject: RE: Jupyter Notebooks on S6 for training
+ 
+Hi both,
+ 
+Yes, all fine with me.
+I will include it in the next WP then.
+If you could please let me know the topics/titles for the three notebooks?
+@Hayley: I lost the link to eumetsat_ocean_training on gitlab - could you please help me?? Then I could 
+check for the titles myself.
+ 
+Thanks!
+ 
+Cheers,
+Christine
+ 
+ 
+From: Rosmorduc Vinca <vrosmorduc@groupcls.com>  
+Sent: Monday 20 September 2021 11:54 
+To: Hayley Evers-King <Hayley.EversKing@eumetsat.int>; Christine Traeger Chatterjee 
+<Christine.Traeger@eumetsat.int> 
+Cc: lbi <lbi@pml.ac.uk> 
+Subject: RE: Jupyter Notebooks on S6 for training
+ 
+WARNING: This email originated outside the organisation. Treat links and attachments with caution.
+OK, let me know, and if it is OK for Christine.
+ 
+Vinca
+ 
+De : Hayley Evers-King <Hayley.EversKing@eumetsat.int>  
+Envoyé : lundi 20 septembre 2021 11:05 
+À : Rosmorduc Vinca <vrosmorduc@groupcls.com>; Christine Traeger Chatterjee 
+<Christine.Traeger@eumetsat.int> 
+Cc : lbi <lbi@pml.ac.uk> 
+Objet : RE: Jupyter Notebooks on S6 for training
+ 
+I will share with you the current working version – I’ve been doing some reorganising and reformatting 
+:) 
+ 
+Hayley 
+ 
+--
+Dr Hayley Evers-King 
+Marine Applications Expert
+Please note that I am on part time maternity leave from the 31st May. My nominal working hours are 
+8am – 12pm each day. Details of maternity cover can be found here. 
+ 
+EUMETSAT
+Eumetsat-Allee 1
+64295 Darmstadt
+Germany
+ 
+Tel: +49 6151 807 8609
+E-mail: Hayley.Evers-King@eumetsat.int
+Twitter: @HayleyEversKing
+ 
+Honorary Fellow of Plymouth Marine Laboratory – www.pml.ac.uk
+ 
+From: Rosmorduc Vinca <vrosmorduc@groupcls.com>  
+Sent: Monday 20 September 2021 10:43 
+To: Hayley Evers-King <Hayley.EversKing@eumetsat.int>; Christine Traeger Chatterjee 
+<Christine.Traeger@eumetsat.int> 
+Cc: lbi <lbi@pml.ac.uk> 
+Subject: RE: Jupyter Notebooks on S6 for training
+ 
+Hi,
+ 
+For the Eumetsat internal gitlab: not that I know. I do have access to Confluence but I don’t think 
+anything else. 
+OK, I can do that – Do I take the current SRAL ones as general guidelines?
+ 
+Best,
+Vinca
+ 
+De : Hayley Evers-King <Hayley.EversKing@eumetsat.int>  
+Envoyé : lundi 20 septembre 2021 10:22 
+À : Rosmorduc Vinca <vrosmorduc@groupcls.com>; Christine Traeger Chatterjee 
+<Christine.Traeger@eumetsat.int> 
+Cc : lbi <lbi@pml.ac.uk> 
+Objet : RE: Jupyter Notebooks on S6 for training
+Hi both,
+ 
+I think it would be fine just to start with 3 equivalent(ish) notebooks for what we have for SRAL. This 
+would add nicely to our set of instrument specific modules we’re organising. 
+ 
+Vinca – do you have access to the internal gitlab? If not I can get it for you, or alternatively you can just 
+send me scripts and I will integrate them there for you. 
+ 
+Best wishes,
+ 
+Hayley 
+--
+Dr Hayley Evers-King 
+Marine Applications Expert
+Please note that I am on part time maternity leave from the 31st May. My nominal working hours are 
+8am – 12pm each day. Details of maternity cover can be found here. 
+ 
+EUMETSAT
+Eumetsat-Allee 1
+64295 Darmstadt
+Germany
+ 
+Tel: +49 6151 807 8609
+E-mail: Hayley.Evers-King@eumetsat.int
+Twitter: @HayleyEversKing
+ 
+Honorary Fellow of Plymouth Marine Laboratory – www.pml.ac.uk
+ 
+From: Rosmorduc Vinca <vrosmorduc@groupcls.com>  
+Sent: Monday 20 September 2021 10:12 
+To: Christine Traeger Chatterjee <Christine.Traeger@eumetsat.int>; Hayley Evers-King 
+<Hayley.EversKing@eumetsat.int> 
+Cc: lbi <lbi@pml.ac.uk> 
+Subject: RE: Jupyter Notebooks on S6 for training
+ 
+Dear Christine,
+ 
+It depends a bit on your ambition, topics, and public aimed, I’d say. 
+At least re-doing the existing S3 ones is a necessity (format is noticeably different, and the S3 code won’t 
+read the S6 data). Then… we could expand and propose other, more advanced or specialized, things. 
+ 
+Best regards,
+Vinca
+ 
+De : Christine Traeger Chatterjee <Christine.Traeger@eumetsat.int>  
+Envoyé : vendredi 17 septembre 2021 17:06 
+À : Rosmorduc Vinca <vrosmorduc@groupcls.com>; Hayley Evers-King <Hayley.EversKing@eumetsat.int> 
+Cc : lbi <lbi@pml.ac.uk> 
+Objet : Jupyter Notebooks on S6 for training
+ 
+Dear both,
+ 
+Could you please let me know on what aspects of S6 you think we need Jupyter Notebooks for? If you 
+could provide the number of Jupyter Notebooks and the topics, so I could include this info in the next 
+WP (for Q4), that would be great.
+ 
+Many thanks.
+ 
+Cheers,
+Christine
+ 
+----------------------------------------------
+Christine Traeger-Chatterjee
+Training Officer
+User Support and Climate Services
+ 
+EUMETSAT
+Eumetsat-Allee 1
+64295 Darmstadt
+Germany
+ 
+Tel: +49 6151 807 7538
+Mobile: +49 160 365 0275
+Fax: +49 6151 807 3040
+E-mail: christine.traeger@eumetsat.int
+Web: www.eumetsat.int
+ 
+ 
+Ce message et toutes les pièces jointes (ci-après le "message") sont établis à l'intention exclusive de ses 
+destinataires et sont confidentiels. Si vous recevez ce message par erreur ou s'il ne vous est pas destiné, 
+merci de le détruire ainsi que toute copie de votre système et d'en avertir immédiatement l'expéditeur. 
+Toute lecture non autorisée, toute utilisation de ce message qui n'est pas conforme à sa destination, toute 
+diffusion ou toute publication, totale ou partielle, est interdite. L'Internet ne permettant pas d'assurer 
+l'intégrité de ce message électronique susceptible d'altération, l’expéditeur (et ses filiales) décline(nt) toute 
+responsabilité au titre de ce message dans l'hypothèse où il aurait été modifié ou falsifié.
+This message and any attachments (the "message") is intended solely for the intended recipient(s) and is 
+confidential. If you receive this message in error, or are not the intended recipient(s), please delete it and 
+any copies from your systems and immediately notify the sender. Any unauthorized view, use that does 
+not comply with its purpose, dissemination or disclosure, either whole or partial, is prohibited. Since the 
+internet cannot guarantee the integrity of this message which may not be reliable, the sender (and its 
+subsidiaries) shall not be liable for the message if modified or falsified.  
+ 
+Any email message from EUMETSAT is sent in good faith but shall neither be binding nor construed as 
+constituting a commitment by EUMETSAT, except where provided for in a written agreement or contract 
+or if explicitly stated in the email. Please note that any views or opinions presented in this email are 
+solely those of the sender and do not necessarily represent those of EUMETSAT. This message and any 
+attachments are intended for the sole use of the addressee(s) and may contain confidential and 
+privileged information. Any unauthorised use, disclosure, dissemination or distribution (in whole or in 
+part) of its contents is not permitted. If you received this message in error, please notify the sender and 
+delete it from your system.
+ 
+Ce message et toutes les pièces jointes (ci-après le "message") sont établis à l'intention exclusive de ses 
+destinataires et sont confidentiels. Si vous recevez ce message par erreur ou s'il ne vous est pas destiné, 
+merci de le détruire ainsi que toute copie de votre système et d'en avertir immédiatement l'expéditeur. 
+Toute lecture non autorisée, toute utilisation de ce message qui n'est pas conforme à sa destination, toute 
+diffusion ou toute publication, totale ou partielle, est interdite. L'Internet ne permettant pas d'assurer 
+l'intégrité de ce message électronique susceptible d'altération, l’expéditeur (et ses filiales) décline(nt) toute 
+responsabilité au titre de ce message dans l'hypothèse où il aurait été modifié ou falsifié.
+This message and any attachments (the "message") is intended solely for the intended recipient(s) and is 
+confidential. If you receive this message in error, or are not the intended recipient(s), please delete it and 
+any copies from your systems and immediately notify the sender. Any unauthorized view, use that does 
+not comply with its purpose, dissemination or disclosure, either whole or partial, is prohibited. Since the 
+internet cannot guarantee the integrity of this message which may not be reliable, the sender (and its 
+subsidiaries) shall not be liable for the message if modified or falsified.  
+ 
+Any email message from EUMETSAT is sent in good faith but shall neither be binding nor construed as 
+constituting a commitment by EUMETSAT, except where provided for in a written agreement or contract 
+or if explicitly stated in the email. Please note that any views or opinions presented in this email are 
+solely those of the sender and do not necessarily represent those of EUMETSAT. This message and any 
+attachments are intended for the sole use of the addressee(s) and may contain confidential and 
+privileged information. Any unauthorised use, disclosure, dissemination or distribution (in whole or in 
+part) of its contents is not permitted. If you received this message in error, please notify the sender and 
+delete it from your system.
+ 
+Ce message et toutes les pièces jointes (ci-après le "message") sont établis à l'intention exclusive de ses 
+destinataires et sont confidentiels. Si vous recevez ce message par erreur ou s'il ne vous est pas destiné, 
+merci de le détruire ainsi que toute copie de votre système et d'en avertir immédiatement l'expéditeur. 
+Toute lecture non autorisée, toute utilisation de ce message qui n'est pas conforme à sa destination, toute 
+diffusion ou toute publication, totale ou partielle, est interdite. L'Internet ne permettant pas d'assurer 
+l'intégrité de ce message électronique susceptible d'altération, l’expéditeur (et ses filiales) décline(nt) toute 
+responsabilité au titre de ce message dans l'hypothèse où il aurait été modifié ou falsifié.
+This message and any attachments (the "message") is intended solely for the intended recipient(s) and is 
+confidential. If you receive this message in error, or are not the intended recipient(s), please delete it and 
+any copies from your systems and immediately notify the sender. Any unauthorized view, use that does 
+not comply with its purpose, dissemination or disclosure, either whole or partial, is prohibited. Since the 
+internet cannot guarantee the integrity of this message which may not be reliable, the sender (and its 
+subsidiaries) shall not be liable for the message if modified or falsified.  
+ 
+Any email message from EUMETSAT is sent in good faith but shall neither be binding nor construed as 
+constituting a commitment by EUMETSAT, except where provided for in a written agreement or contract 
+or if explicitly stated in the email. Please note that any views or opinions presented in this email are 
+solely those of the sender and do not necessarily represent those of EUMETSAT. This message and any 
+attachments are intended for the sole use of the addressee(s) and may contain confidential and 
+privileged information. Any unauthorised use, disclosure, dissemination or distribution (in whole or in 
+part) of its contents is not permitted. If you received this message in error, please notify the sender and 
+delete it from your system.
+ 
+Ce message et toutes les pièces jointes (ci-après le "message") sont établis à l'intention exclusive de ses 
+destinataires et sont confidentiels. Si vous recevez ce message par erreur ou s'il ne vous est pas destiné, 
+merci de le détruire ainsi que toute copie de votre système et d'en avertir immédiatement l'expéditeur. 
+Toute lecture non autorisée, toute utilisation de ce message qui n'est pas conforme à sa destination, toute 
+diffusion ou toute publication, totale ou partielle, est interdite. L'Internet ne permettant pas d'assurer 
+l'intégrité de ce message électronique susceptible d'altération, l’expéditeur (et ses filiales) décline(nt) toute 
+responsabilité au titre de ce message dans l'hypothèse où il aurait été modifié ou falsifié.
+This message and any attachments (the "message") is intended solely for the intended recipient(s) and is 
+confidential. If you receive this message in error, or are not the intended recipient(s), please delete it and 
+any copies from your systems and immediately notify the sender. Any unauthorized view, use that does 
+not comply with its purpose, dissemination or disclosure, either whole or partial, is prohibited. Since the 
+internet cannot guarantee the integrity of this message which may not be reliable, the sender (and its 
+subsidiaries) shall not be liable for the message if modified or falsified.  
+ 
+Any email message from EUMETSAT is sent in good faith but shall neither be binding nor construed as 
+constituting a commitment by EUMETSAT, except where provided for in a written agreement or contract 
+or if explicitly stated in the email. Please note that any views or opinions presented in this email are 
+solely those of the sender and do not necessarily represent those of EUMETSAT. This message and any 
+attachments are intended for the sole use of the addressee(s) and may contain confidential and 
+privileged information. Any unauthorised use, disclosure, dissemination or distribution (in whole or in 
+part) of its contents is not permitted. If you received this message in error, please notify the sender and 
+delete it from your system.
+ 
+Ce message et toutes les pièces jointes (ci-après le "message") sont établis à l'intention exclusive de ses 
+destinataires et sont confidentiels. Si vous recevez ce message par erreur ou s'il ne vous est pas destiné, 
+merci de le détruire ainsi que toute copie de votre système et d'en avertir immédiatement l'expéditeur. 
+Toute lecture non autorisée, toute utilisation de ce message qui n'est pas conforme à sa destination, toute 
+diffusion ou toute publication, totale ou partielle, est interdite. L'Internet ne permettant pas d'assurer 
+l'intégrité de ce message électronique susceptible d'altération, l’expéditeur (et ses filiales) décline(nt) toute 
+responsabilité au titre de ce message dans l'hypothèse où il aurait été modifié ou falsifié.
+This message and any attachments (the "message") is intended solely for the intended recipient(s) and is 
+confidential. If you receive this message in error, or are not the intended recipient(s), please delete it and 
+any copies from your systems and immediately notify the sender. Any unauthorized view, use that does 
+not comply with its purpose, dissemination or disclosure, either whole or partial, is prohibited. Since the 
+internet cannot guarantee the integrity of this message which may not be reliable, the sender (and its 
+subsidiaries) shall not be liable for the message if modified or falsified.  
