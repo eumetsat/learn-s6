@@ -1,5 +1,6 @@
 # Copyright holder
-EUMETSAT
+copyright: 2022 EUMETSAT
+license: LICENSE.txt
  
 # List of development authors
 Ben Loveday (Innoflair UG)
@@ -10,8 +11,6 @@ Aida Alvera-Azcarate (GHER)
 Vittorio Brando (CNR)
 Vinca Rosmorduc (CLS)
 Ana Ruescas (Brockmann Consult)
-Lauren Biermann (PML)
-Ollie Clements (PML)
 
 # Support
 For all queries on this software package, please contact ops@eumetsat.int

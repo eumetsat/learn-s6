@@ -1,10 +1,5 @@
 # Learn POSEIDON4
 
-[![Generic badge](https://img.shields.io/badge/Launch-TrainHub-Blue.svg)](https://trainhub.eumetsat.int/ocean/sensors)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gl/eumetlab%2Focean%2Fsensors%2Flearn-poseidon4/main)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/eumetlab/ocean/sensors/learn-poseidon4/blob/main)
-[![Open in Planetary Computer](https://img.shields.io/badge/Open-Planetary%20Computer-black?style=flat&logo=microsoft)](https://pccompute.westeurope.cloudapp.azure.com/compute/hub/user-redirect/git-pull?repo=https://github.com/eumetlab/ocean/sensors/learn-poseidon4&branch=main)
-
 The **learn-poseidon4** module consists of a collection of python-based Jupyter-notebooks 
 design to demonstrate the capability of the Poseidon-4 Altimetr (P4), carried 
 by the Sentinel-6 satellite, and to help users begin to work with its data at 
@@ -12,13 +7,11 @@ level-1 and level-2.
 
 For any questions about this repository, please contact ops@eumetsat.int.
 
-This repository can be launched in TrainHub WEkEO, Binder, colab ...TO BE FINALIZED!
-
 ## License
  
-This code is licensed under an MIT license. See file LICENCE.txt for details on 
+This code is licensed under an MIT license. See file LICENSE.txt for details on 
 the usage and distribution terms. No dependencies are distributed as part of this 
-package.
+package. Copyright EUMETSAT 2022.
 
 All product names, logos, and brands are property of their respective owners. 
 All company, product and service names used in this website are for identification 
@@ -58,6 +51,7 @@ operating system. Anaconda Python distributions include Jupyter Notebook.
 |ipykernel|6.4.1|BSD-3|https://anaconda.org/conda-forge/ipykernel|
 |cmocean|2.0|MIT|https://anaconda.org/conda-forge/cmocean|
 |eumdac|1.0.0|MIT|https://anaconda.org/eumetsat/eumdac|
+|paramiko|2.11.0|LGPL|https://anaconda.org/conda-forge/paramiko|
 
 ## Installation
 
@@ -72,12 +66,14 @@ the Anaconda Navigator). Once you have opened a terminal/prompt, you should navi
 to the directory where you want to put the code. Once you are in the correct directory, 
 you should run the following command;
 
-`git clone --recurse-submodules --remote-submodules https://gitlab.eumetsat.int/eumetlab/ocean/sensors/learn-poseidon4`
+`git clone --recurse-submodules --remote-submodules https://gitlab.eumetsat.int/eumetlab/oceans/ocean-training/sensors/learn-poseidon4.git`
 
 This will make a local copy of all the relevant files.
 
 *Note: If you find that you are missing packages, you should check that you ran 
 `git clone` with both the `--recurse-submodules` and `--remote-submodules` options.*
+
+*Note: if you are using an older version of git, you may find that your submodules are empty. In this case, you need to remove the folder and re-run the line above with `--recursive` added to the end*
 
 ## Usage
 
@@ -133,7 +129,7 @@ If you are running this code for the first time in this environment, you need to
 
 Now you can run Jupyter using:
 
-`jupyter notebook`
+`jupyter notebook` or `jupyter-notebook`, depending on your operating system.
 
 This should open Jupyter Notebooks in a browser window. On occasion, Jupyter may not
 be able to open a window and will give you a URL to past in your browser. Please do
@@ -150,24 +146,25 @@ Now you can run the notebooks! We recommend you start with the [Index](./Index.i
 If you would like to collaborate on a part of this code base or contribute to it 
 please contact us on copernicus.training@eumetsat.int. If you are have issues and 
 need help, or you have found something that doesn't work, then please contact us 
-at ops@eumetsat.int.
+at ops@eumetsat.int. We welcome your feedback!
 
 <hr>
 <hr>
 
-### TL;DR for advanced users
+### Overview for advanced users
 
 **Installation:**
 
-`git clone --recurse-submodules --remote-submodules https://gitlab.eumetsat.int/eumetlab/ocean/sensors/learn-poseidon4`
+`git clone --recurse-submodules --remote-submodules https://gitlab.eumetsat.int/eumetlab/oceans/ocean-training/sensors/learn-poseidon4.git`
 
 **Create and set environment**
 
 `conda env create -f environment.yml` \
 `conda activate cmts_learn_poseidon4`
 
-** WEkEO SPECIFIC:
-`ipython kernel install --user --name=cmts`
+**WEkEO SPECIFIC**
+
+`ipython kernel install --user --name=cmts_learn_poseidon4`
 
 **Activate extensions (1st run in environment, only)**
 

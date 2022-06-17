@@ -10,10 +10,11 @@ license_text_file: LICENCE.txt
  
 # File(s) associated to this component
 
-about_resource: ./1_POSEIDON4_introductory/1_1_POSEIDON4_data_access.ipynb
-about_resource: ./1_POSEIDON4_introductory/1_2_POSEIDON4_file_structure.ipynb
-about_resource: ./1_POSEIDON4_introductory/1_3_POSEIDON4_coverage.ipynb
-about_resource: ./2_POSEIDON4_advanced/2_1_POSEIDON4_advanced_data_access_eumdac.ipynb
+about_resource: ./1_P4_introductory/1_1_POSEIDON4_data_access.ipynb
+about_resource: ./1_P4_introductory/1_2_POSEIDON4_file_structure.ipynb
+about_resource: ./1_P4_introductory/1_3_POSEIDON4_coverage.ipynb
+about_resource: ./2_P4_advanced/
+about_resource: ./img/S6_orbit.png
 about_resource: ./img/thumbs/
 about_resource: Index.ipynb
 about_resource: learn-poseidon4.ABOUT
