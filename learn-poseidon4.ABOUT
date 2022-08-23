@@ -18,6 +18,8 @@ about_resource: ./1_P4_introductory/1_5_P4_waveforms.ipynb
 about_resource: ./1_P4_introductory/1_6_P4_SSHA.ipynb
 about_resource: ./1_P4_introductory/1_7_P4_SWH.ipynb
 about_resource: ./1_P4_introductory/1_8_P4_WS.ipynb
+about_resource: ./2_P4_advanced/2_1_P4_advanced_data_access_eumdac.ipynb
+about_resource: ./2_P4_advanced/2_2_acquire_P4_full_cycle.ipynb
 about_resource: ./img/S6_orbit.png
 about_resource: ./img/thumbs/1_1_P4_data_access_thumb.png
 about_resource: ./img/thumbs/1_2_P4_file_structure_thumb.png
@@ -27,6 +29,8 @@ about_resource: ./img/thumbs/1_5_P4_waveforms_thumb.png
 about_resource: ./img/thumbs/1_6_P4_SSHA_thumb.png
 about_resource: ./img/thumbs/1_7_P4_SWH_thumb.png
 about_resource: ./img/thumbs/1_8_P4_WS_thumb.png
+about_resource: ./img/thumbs/2_1_P4_advanced_data_access_eumdac_thumb.png
+about_resource: ./img/thumbs/2_2_acquire_P4_full_cycle_thumb.png
 about_resource: AUTHORS.txt
 about_resource: Index.ipynb
 about_resource: README.md
