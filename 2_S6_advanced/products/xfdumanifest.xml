@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xfdu:XFDU xmlns:xfdu="urn:ccsds:schema:xfdu:1" xmlns:sentinel-safe="http://www.esa.int/safe/sentinel/1.1" xmlns:gml="http://www.opengis.net/gml" xmlns:sentinel3="http://www.esa.int/safe/sentinel/sentinel-3/1.0" xmlns:sral="http://www.esa.int/safe/sentinel/sentinel-3/sral/1.0" version="esa/safe/sentinel/sentinel-3/sral/level-2/1.0">
+  <informationPackageMap>
+    <xfdu:contentUnit ID="packageUnit" unitType="Information Package" textInfo="SENTINEL-3 SRAL Level 2" pdiID="processing" dmdID="acquisitionPeriod platform measurementOrbitReference measurementQualityInformation measurementFrameSet generalProductInformation sralProductInformation">
+      <xfdu:contentUnit ID="enhancedMeasurementUnit" unitType="Measurement Data Unit" textInfo="Enhanced Measurement Data Set">
+        <dataObjectPointer dataObjectID="enhancedMeasurementData"/>
+      </xfdu:contentUnit>
+      <xfdu:contentUnit ID="standardMeasurementUnit" unitType="Measurement Data Unit" textInfo="Standard Measurement Data Set">
+        <dataObjectPointer dataObjectID="standardMeasurementData"/>
+      </xfdu:contentUnit>
+      <xfdu:contentUnit ID="reducedMeasurementUnit" unitType="Measurement Data Unit" textInfo="Reduced Measurement Data Set">
+        <dataObjectPointer dataObjectID="reducedMeasurementData"/>
+      </xfdu:contentUnit>
+    </xfdu:contentUnit>
+  </informationPackageMap>
+  <metadataSection>
+    <metadataObject ID="processing" classification="PROVENANCE" category="PDI">
+      <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Processing">
+        <xmlData>
+          <sentinel-safe:processing name="DataProcessing" outputLevel="2" start="2022-08-23T07:13:08.000000Z" stop="2022-08-23T07:23:04.000000Z">
+            <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+              <sentinel-safe:hardware name="OPE"/>
+              <sentinel-safe:software name="IPF-SM-2" version="07.02"/>
+            </sentinel-safe:facility>
+            <sentinel-safe:resource name="S3__AX___CST_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="Universal Constants File">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_AX___FRO_AX_20220820T000000_20220830T000000_20220823T065132___________________EUM_O_AL_001.SEN3" role="Time Correlation File"/>
+            <sentinel-safe:resource name="S3A_AX___FRO_AX_20220820T000000_20220830T000000_20220823T065132___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="2.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__AX___MF1_AX_20220823T000000_20220823T120000_20220822T180440___________________ECW_O_NR_001.SEN3" role="ECMWF Meteorological Data (Forecast ) FC SFC and FC PL">
+              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="2.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__AX___MF1_AX_20220823T060000_20220823T180000_20220823T060904___________________ECW_O_NR_001.SEN3" role="ECMWF Meteorological Data (Forecast ) FC SFC and FC PL">
+              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="2.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__AX___MF2_AX_20220823T000000_20220823T120000_20220822T181639___________________ECW_O_NR_001.SEN3" role="ECMWF Meteorological Data (Forecast ) FC ML">
+              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="2.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__AX___MF2_AX_20220823T060000_20220823T180000_20220823T055844___________________ECW_O_NR_001.SEN3" role="ECMWF Meteorological Data (Forecast ) FC ML">
+              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="2.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20220330T090651___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File">
+              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="2.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_MW_1_MWR____20220823T043500_20220823T061708_20220823T064524_6128_089_076______MAR_O_NR_005.SEN3" role="L1 Product">
+              <sentinel-safe:processing name="DataProcessing" outputLevel="1" start="2022-08-23T06:44:37.156326Z" stop="2022-08-23T06:45:28.465857Z">
+                <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="IPF-MW-1" version="06.13"/>
+                </sentinel-safe:facility>
+                <sentinel-safe:resource name="S3A_AX___FRO_AX_20220819T000000_20220829T000000_20220822T065141___________________EUM_O_AL_001.SEN3" role="Time Correlation File"/>
+                <sentinel-safe:resource name="S3A_AX___FRO_AX_20220819T000000_20220829T000000_20220822T065141___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)"/>
+                <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20220330T090651___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File"/>
+                <sentinel-safe:resource name="S3A_MW_0_MWR____20220823T043500_20220823T061709_20220823T064126_6128_089_076______MAR_O_NR_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3A_MW_1_DNB_AX_20000101T000000_20220823T061704_20220823T064233___________________MAR_O_AL____.SEN3" role="MWR Internal calibration and Monitoring Long Term Monitoring parameters MWR_CAL_DNB_LTM"/>
+                <sentinel-safe:resource name="S3A_MW_1_NIR_AX_20000101T000000_20220823T061704_20220823T064233___________________MAR_O_AL____.SEN3" role="MWR Internal calibration and Monitoring Long Term Monitoring parameters MWR_CAL_NIR_LTM"/>
+                <sentinel-safe:resource name="S3A_MW_1_SLC_AX_20160216T000000_20991231T235959_20190621T120000___________________MPC_O_AL_003.SEN3" role="MWR Side Lobe correction file"/>
+                <sentinel-safe:resource name="S3A_MW___CHDNAX_20160216T000000_20991231T235959_20210929T120000___________________MPC_O_AL_005.SEN3" role="MWR instrumental characterization and calibration data,nominal path"/>
+                <sentinel-safe:resource name="S3A_MW___STD_AX_20160216T000000_20991231T235959_20220111T120000___________________MPC_O_AL_003.SEN3" role="MWR Satellite Temperature data file"/>
+                <sentinel-safe:resource name="S3A_SR___ROE_AX_20220823T043410_20220823T061750_20220823T064226___________________MAR_O_NR____.SEN3" role="Orbit File"/>
+                <sentinel-safe:resource name="S3A_SR___ROE_AX_20220823T043410_20220823T061750_20220823T064226___________________MAR_O_NR____.SEN3" role="NRT Restituted Orbit File  (GNSS Rapid Ephemerides)"/>
+                <sentinel-safe:resource name="S3A_TM_0_NAT____20220823T025229_20220823T043500_20220823T045052_6151_089_075______MAR_O_AL_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3A_TM_0_NAT____20220823T025229_20220823T043500_20220823T045424_6151_089_075______MAR_O_AL_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3A_TM_0_NAT____20220823T043501_20220823T061709_20220823T063127_6127_089_076______MAR_O_AL_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3A_TM_0_NAT____20220823T043501_20220823T061709_20220823T063523_6127_089_076______MAR_O_AL_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3IPF PDS 003.1 - i3r0 - Product Data Format Specification - SRAL and MWR Common LAN-MAR" role="Product Data Format Specification - SRAL-MWR L1 Common LAN/MAR"/>
+                <sentinel-safe:resource name="S3IPF PDS 008 - i3r9 - Metadata Specification" role="Product Data Format Specification - Metadata Specification"/>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_MW___CHDNAX_20160216T000000_20991231T235959_20210929T120000___________________MPC_O_AL_005.SEN3" role="MWR instrumental characterization and calibration data,nominal path">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_1_SRA____20220823T055501_20220823T060500_20220823T065945_0599_089_077______MAR_O_NR_005.SEN3" role="L1 Product">
+              <sentinel-safe:processing name="DataProcessing" outputLevel="1" start="2022-08-23T06:44:55.000000Z" stop="2022-08-23T06:59:45.000000Z">
+                <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="IPF-SR-1" version="06.23"/>
+                </sentinel-safe:facility>
+                <sentinel-safe:resource name="S3__AX___CST_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="Universal Constants File"/>
+                <sentinel-safe:resource name="S3A_AX___FRO_AX_20220819T000000_20220829T000000_20220822T065141___________________EUM_O_AL_001.SEN3" role="Time Correlation File"/>
+                <sentinel-safe:resource name="S3A_AX___FRO_AX_20220819T000000_20220829T000000_20220822T065141___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)"/>
+                <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20220330T090651___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File"/>
+                <sentinel-safe:resource name="S3A_SR_0_SRA____20220823T054500_20220823T055500_20220823T063611_0599_089_076______MAR_O_NR_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3A_SR_0_SRA____20220823T055501_20220823T060500_20220823T063611_0599_089_077______MAR_O_NR_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3A_SR_0_SRA____20220823T060500_20220823T061500_20220823T063633_0599_089_077______MAR_O_NR_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3A_SR_1_CA1LAX_20000101T000000_20220823T030738_20220823T045328___________________MAR_O_AL____.SEN3" role="SRAL Internal calibration Long Term Monitoring parameters CAL1_LRM_LTM"/>
+                <sentinel-safe:resource name="S3A_SR_1_CA1SAX_20000101T000000_20220823T030745_20220823T045328___________________MAR_O_AL____.SEN3" role="SRAL Internal calibration Long Term Monitoring parameters CAL1_SAR_LTM"/>
+                <sentinel-safe:resource name="S3A_SR_1_CA2CAX_20000101T000000_20220823T030751_20220823T045328___________________MAR_O_AL____.SEN3" role="SRAL Internal calibration Long Term Monitoring parameters CAL2_C_LTM"/>
+                <sentinel-safe:resource name="S3A_SR_1_CA2KAX_20000101T000000_20220823T030751_20220823T045328___________________MAR_O_AL____.SEN3" role="SRAL Internal calibration Long Term Monitoring parameters CAL2_Ku_LTM"/>
+                <sentinel-safe:resource name="S3A_SR_1_CONMAX_20160216T000000_20991231T235959_20220425T120000___________________MPC_O_AL_009.SEN3" role="SRAL Configuration Data File - L1 processor"/>
+                <sentinel-safe:resource name="S3A_SR_1_USO_AX_20160223T195017_20220822T021947_20220822T084751___________________CNE_O_AL_001.SEN3" role="USO frequency"/>
+                <sentinel-safe:resource name="S3A_SR___CHDNAX_20160216T000000_20991231T235959_20200312T120000___________________MPC_O_AL_006.SEN3" role="SRAL instrumental characterization data. Nominal."/>
+                <sentinel-safe:resource name="S3__SR___LSM_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Land/Sea Mask"/>
+                <sentinel-safe:resource name="S3A_SR___ROE_AX_20220823T043410_20220823T061750_20220823T064226___________________MAR_O_NR____.SEN3" role="Orbit File"/>
+                <sentinel-safe:resource name="S3A_SR___ROE_AX_20220823T043410_20220823T061750_20220823T064226___________________MAR_O_NR____.SEN3" role="NRT Restituted Orbit File  (GNSS Rapid Ephemerides)"/>
+                <sentinel-safe:resource name="S3A_TM_0_NAT____20220823T043501_20220823T061709_20220823T063127_6127_089_076______MAR_O_AL_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3A_TM_0_NAT____20220823T043501_20220823T061709_20220823T063523_6127_089_076______MAR_O_AL_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3IPF PDS 003.5 - i1r0 - Product Data Format Specification - SRAL Level 1 Marine" role="Product Data Format Specification - SRAL-MWR L1 Marine"/>
+                <sentinel-safe:resource name="S3IPF PDS 008 - i3r9 - Metadata Specification" role="Product Data Format Specification - Metadata Specification"/>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_1_SRA____20220823T060501_20220823T061500_20220823T070214_0599_089_077______MAR_O_NR_005.SEN3" role="L1 Product">
+              <sentinel-safe:processing name="DataProcessing" outputLevel="1" start="2022-08-23T06:48:10.000000Z" stop="2022-08-23T07:02:14.000000Z">
+                <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="IPF-SR-1" version="06.23"/>
+                </sentinel-safe:facility>
+                <sentinel-safe:resource name="S3__AX___CST_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="Universal Constants File"/>
+                <sentinel-safe:resource name="S3A_AX___FRO_AX_20220819T000000_20220829T000000_20220822T065141___________________EUM_O_AL_001.SEN3" role="Time Correlation File"/>
+                <sentinel-safe:resource name="S3A_AX___FRO_AX_20220819T000000_20220829T000000_20220822T065141___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)"/>
+                <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20220330T090651___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File"/>
+                <sentinel-safe:resource name="S3A_SR_0_SRA____20220823T055501_20220823T060500_20220823T063611_0599_089_077______MAR_O_NR_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3A_SR_0_SRA____20220823T060500_20220823T061500_20220823T063633_0599_089_077______MAR_O_NR_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3A_SR_1_CA1LAX_20000101T000000_20220823T030738_20220823T045328___________________MAR_O_AL____.SEN3" role="SRAL Internal calibration Long Term Monitoring parameters CAL1_LRM_LTM"/>
+                <sentinel-safe:resource name="S3A_SR_1_CA1SAX_20000101T000000_20220823T030745_20220823T045328___________________MAR_O_AL____.SEN3" role="SRAL Internal calibration Long Term Monitoring parameters CAL1_SAR_LTM"/>
+                <sentinel-safe:resource name="S3A_SR_1_CA2CAX_20000101T000000_20220823T030751_20220823T045328___________________MAR_O_AL____.SEN3" role="SRAL Internal calibration Long Term Monitoring parameters CAL2_C_LTM"/>
+                <sentinel-safe:resource name="S3A_SR_1_CA2KAX_20000101T000000_20220823T030751_20220823T045328___________________MAR_O_AL____.SEN3" role="SRAL Internal calibration Long Term Monitoring parameters CAL2_Ku_LTM"/>
+                <sentinel-safe:resource name="S3A_SR_1_CONMAX_20160216T000000_20991231T235959_20220425T120000___________________MPC_O_AL_009.SEN3" role="SRAL Configuration Data File - L1 processor"/>
+                <sentinel-safe:resource name="S3A_SR_1_USO_AX_20160223T195017_20220822T021947_20220822T084751___________________CNE_O_AL_001.SEN3" role="USO frequency"/>
+                <sentinel-safe:resource name="S3A_SR___CHDNAX_20160216T000000_20991231T235959_20200312T120000___________________MPC_O_AL_006.SEN3" role="SRAL instrumental characterization data. Nominal."/>
+                <sentinel-safe:resource name="S3__SR___LSM_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Land/Sea Mask"/>
+                <sentinel-safe:resource name="S3A_SR___ROE_AX_20220823T043410_20220823T061750_20220823T064226___________________MAR_O_NR____.SEN3" role="Orbit File"/>
+                <sentinel-safe:resource name="S3A_SR___ROE_AX_20220823T043410_20220823T061750_20220823T064226___________________MAR_O_NR____.SEN3" role="NRT Restituted Orbit File  (GNSS Rapid Ephemerides)"/>
+                <sentinel-safe:resource name="S3A_TM_0_NAT____20220823T043501_20220823T061709_20220823T063127_6127_089_076______MAR_O_AL_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3A_TM_0_NAT____20220823T043501_20220823T061709_20220823T063523_6127_089_076______MAR_O_AL_002.SEN3" role="L0 Product"/>
+                <sentinel-safe:resource name="S3IPF PDS 003.5 - i1r0 - Product Data Format Specification - SRAL Level 1 Marine" role="Product Data Format Specification - SRAL-MWR L1 Marine"/>
+                <sentinel-safe:resource name="S3IPF PDS 008 - i3r9 - Metadata Specification" role="Product Data Format Specification - Metadata Specification"/>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_CCT_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Coastal configuration type">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_CON_AX_20160216T000000_20991231T235959_20220620T000019___________________EUM_O_NS_019.SEN3" role="SRAL Configuration Data File - L2 processor">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="EUMETSAT" organisation="EUMETSAT" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_CP00AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Climatological pressure grids (00)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_CP06AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Climatological pressure grids (06)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_CP12AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Climatological pressure grids (12)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_CP18AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Climatological pressure grids (18)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_EOT1AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Coefficients map for the diurnal elastic ocean tide calculation">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_EOT2AX_20160216T000000_20991231T235959_20190402T120000___________________MPC_O_AL_003.SEN3" role="SRAL Coefficients map for the semi-diurnal elastic ocean tide calculation">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_FLT_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Freezing level table">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_FMO_AX_20220823T060000_20220823T060000_20220822T220502___________________CNE_O_NS_001.SEN3" role="SRAL Forecast Ocean Barotropic Correction (MOG2D data)">
+              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="2.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_FMO_AX_20220823T120000_20220823T120000_20220822T220502___________________CNE_O_NS_001.SEN3" role="SRAL Forecast Ocean Barotropic Correction (MOG2D data)">
+              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="2.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_GEO_AX_20160216T000000_20991231T235959_20190402T120000___________________MPC_O_AL_002.SEN3" role="SRAL Geoid height map">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_IC01AX_20160216T000000_20991231T235959_20161010T120000___________________MPC_O_AL_002.SEN3" role="SRAL Modeled instrumental corrections 1">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_IC02AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Modeled instrumental corrections 2">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_IC03AX_20160216T000000_20991231T235959_20161010T120000___________________MPC_O_AL_002.SEN3" role="SRAL Modeled instrumental corrections 3">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_IC04AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Modeled instrumental corrections 4">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_IC05AX_20160216T000000_20991231T235959_20161010T120000___________________MPC_O_AL_002.SEN3" role="SRAL Modeled instrumental corrections 5">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_IC06AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Modeled instrumental corrections 6">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_IC07AX_20160216T000000_20991231T235959_20161010T120000___________________MPC_O_AL_002.SEN3" role="SRAL Modeled instrumental corrections 7">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_IC08AX_20160216T000000_20991231T235959_20161010T120000___________________MPC_O_AL_002.SEN3" role="SRAL Modeled instrumental corrections 8">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_IC09AX_20160216T000000_20991231T235959_20161010T120000___________________MPC_O_AL_002.SEN3" role="SRAL Modeled instrumental corrections 9">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_IC10AX_20160216T000000_20991231T235959_20161010T120000___________________MPC_O_AL_002.SEN3" role="SRAL Modeled instrumental corrections 10">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_ITD_AX_20160216T000000_20991231T235959_20210425T000001___________________EUM_O_AL_001.SEN3" role="SRAL Internal tide (solution 1)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="EUMETSAT" organisation="EUMETSAT" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_LNEQAX_20160216T000000_20991231T235959_20190402T120000___________________MPC_O_AL_003.SEN3" role="SRAL Coefficients map for long period ocean tide calculation">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_LRC_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Lapse rate climatology table">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_LT1_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Coefficients map for the tidal loading effect calculation 1">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_LT2_AX_20160216T000000_20991231T235959_20190402T120000___________________MPC_O_AL_003.SEN3" role="SRAL Coefficients map for the tidal loading effect calculation 2">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_LUTEAX_20160216T000000_20991231T235959_20170713T120000___________________MPC_O_AL_002.SEN3" role="Bessel Look-up table: Epoch">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_LUTFAX_20160216T000000_20991231T235959_20170713T120000___________________MPC_O_AL_002.SEN3" role="Bessel Look-up table: F0">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_LUTSAX_20160216T000000_20991231T235959_20181127T120000___________________MPC_O_AL_003.SEN3" role="Bessel Look-up table: SWH">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_MAG_AX_20160216T000000_20991231T235959_20170811T140000___________________MPC_O_AL_002.SEN3" role="SRAL Meteo Altimeter Gaussian Grid">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_MDT_AX_20160216T000000_20991231T235959_20210425T000002___________________EUM_O_AL_002.SEN3" role="SRAL Mean Dynamic Topography height map">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="EUMETSAT" organisation="EUMETSAT" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_MLM_AX_20160216T000000_20991231T235959_20200512T120000___________________MPC_O_AL_004.SEN3" role="SRAL Marine/Land Mask">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_MSMGAX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Map of the slopes of the MSS/geoid with respect to the ellipsoid">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_MSS1AX_20160216T000000_20991231T235959_20210910T000004___________________EUM_O_AL_004.SEN3" role="SRAL Mean sea surface height map (solution 1)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="EUMETSAT" organisation="EUMETSAT" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_MSS2AX_20160216T000000_20991231T235959_20220425T000004___________________EUM_O_AL_004.SEN3" role="SRAL Mean sea surface height map (solution 2)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="EUMETSAT" organisation="EUMETSAT" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_NRPPAX_20220823T043410_20220823T061750_20220823T064227___________________MAR_O_NR____.SEN3" role="NRT Platform Files">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="Marine Processing and Archiving Centre (MAR)" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="S3PODIPF" version="02.23"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_ODLEAX_20160216T000000_20991231T235959_20170322T120000___________________MPC_O_AL_002.SEN3" role="SRAL Bathymetry/topography  map">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_PGI_AX_20220823T000000_20220823T235959_20220822T114733___________________CNE_O_NR_001.SEN3" role="SRAL Along-track ionospheric data (GIM)(for NRT processing)">
+              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="2.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_POL_AX_19870101T000000_20230818T000000_20220822T214749___________________CNE_O_AL_001.SEN3" role="SRAL Pole location">
+              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="2.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_POTDAX_20160216T000000_20991231T235959_20220425T000001___________________EUM_O_AL_001.SEN3" role="SRAL Pole tide (sum of solid, ocean and load components)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="EUMETSAT" organisation="EUMETSAT" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_RET_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Default  stack weights">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_RRC_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Rain rate correction table">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_S1AMAX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL S1 tide grids of monthly means of global amplitude">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_S1PHAX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL S1 tide grids of monthly means of global phase">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_S2AMAX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL S2 tide grids of monthly means of global amplitude">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_S2PHAX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL S2 tide grids of monthly means of global phase">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD01AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (January)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD02AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (February)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD03AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (March)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD04AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (April)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD05AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (May)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD06AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (June)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD07AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (July)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD08AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (August)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD09AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (September)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD10AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (October)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD11AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (November)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SD12AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Snow depth climatology (December)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SET_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Cartwright and Edden tide potential amplitudes for the solid earth tide and the equilibrium long period ocean tide height calculation">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SFL_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Seasonal freezing level table">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SHA_AX_20160216T000000_20991231T235959_20210425T000002___________________EUM_O_AL_002.SEN3" role="SRAL Theoretical angle to shore">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="EUMETSAT" organisation="EUMETSAT" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SHD_AX_20160216T000000_20991231T235959_20210425T000003___________________EUM_O_AL_003.SEN3" role="SRAL Theoretical distance to shore">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="EUMETSAT" organisation="EUMETSAT" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI01AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (January)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI02AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (February)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI03AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (March)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI04AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (April)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI05AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (May)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI06AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (June)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI07AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (July)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI08AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (August)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI09AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (September)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI10AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (October)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI11AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (November)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SI12AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea-ice concentration climatolog ,monthly medium ice concentration (December)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SIC_AX_20220811T000000_20220813T235959_20220822T010438___________________MSL_O_AL_001.SEN3" role="SRAL Sea-ice concentration">
+              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="2.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SIGLAX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Expected Ku-band Sigma0 table (LRM)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SIGSAX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Expected Ku-band Sigma0 table (SAR)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_SSBLAX_20000101T000000_20991231T235959_20220425T000002___________________EUM_O_AL_002.SEN3" role="SRAL SSB correction table (LRM)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="EUMETSAT" organisation="EUMETSAT" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR_2_SSBSAX_20000101T000000_20991231T235959_20220425T000002___________________EUM_O_AL_002.SEN3" role="SRAL SSB correction table (SAR)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="EUMETSAT" organisation="EUMETSAT" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SSM_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="Surface slopes models">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SST_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Sea surface temperature seasonal tables">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_SURFAX_20160216T000000_20991231T235959_20161010T120000___________________MPC_O_AL_002.SEN3" role="SRAL Surface classification mask">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_WNDLAX_20160216T000000_20991231T235959_20190402T120000___________________MPC_O_AL_002.SEN3" role="SRAL Wind table LRM mode">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR_2_WNDSAX_20160216T000000_20991231T235959_20190402T120000___________________MPC_O_AL_002.SEN3" role="SRAL Wind table SAR mode">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR___CHDNAX_20160216T000000_20991231T235959_20200312T120000___________________MPC_O_AL_006.SEN3" role="SRAL instrumental characterization data. Nominal.">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3__SR___LSM_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SRAL Land/Sea Mask">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="ESA's Mission Performance Coordinating Centre (MPC)" organisation="ESA's Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="ADC" version="1.0"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3A_SR___ROE_AX_20220823T043410_20220823T061750_20220823T064226___________________MAR_O_NR____.SEN3" role="Orbit File"/>
+            <sentinel-safe:resource name="S3A_SR___ROE_AX_20220823T043410_20220823T061750_20220823T064226___________________MAR_O_NR____.SEN3" role="NRT Restituted Orbit File  (GNSS Rapid Ephemerides)">
+              <sentinel-safe:processing name="AdfProcessing">
+                <sentinel-safe:facility name="Marine Processing and Archiving Centre (MAR)" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                  <sentinel-safe:hardware name="OPE"/>
+                  <sentinel-safe:software name="S3PODIPF" version="02.23"/>
+                </sentinel-safe:facility>
+              </sentinel-safe:processing>
+            </sentinel-safe:resource>
+            <sentinel-safe:resource name="S3IPF - Product Data Format Specification - SRAL and MWR Level 2 Marine (EUM/SEN3/SPE/20/1191479 v3A)" role="Product Data Format Specification - SRAL-MWR"/>
+            <sentinel-safe:resource name="S3IPF PDS 008 - i3r8 - Metadata Specification" role="Product Data Format Specification - Metadata Specification"/>
+          </sentinel-safe:processing>
+        </xmlData>
+      </metadataWrap>
+    </metadataObject>
+    <metadataObject ID="acquisitionPeriod" classification="DESCRIPTION" category="DMD">
+      <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Acquisition Period">
+        <xmlData>
+          <sentinel-safe:acquisitionPeriod>
+            <sentinel-safe:startTime>2022-08-23T06:05:00.501036Z</sentinel-safe:startTime>
+            <sentinel-safe:stopTime>2022-08-23T06:15:00.470290Z</sentinel-safe:stopTime>
+          </sentinel-safe:acquisitionPeriod>
+        </xmlData>
+      </metadataWrap>
+    </metadataObject>
+    <metadataObject ID="platform" classification="DESCRIPTION" category="DMD">
+      <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Platform Description">
+        <xmlData>
+          <sentinel-safe:platform>
+            <sentinel-safe:nssdcIdentifier>2016-011A</sentinel-safe:nssdcIdentifier>
+            <sentinel-safe:familyName>Sentinel-3</sentinel-safe:familyName>
+            <sentinel-safe:number>A</sentinel-safe:number>
+            <sentinel-safe:instrument>
+              <sentinel-safe:familyName abbreviation="SRAL">Sar Radar ALtimeter</sentinel-safe:familyName>
+              <sentinel-safe:mode identifier="EO">Earth Observation</sentinel-safe:mode>
+            </sentinel-safe:instrument>
+          </sentinel-safe:platform>
+        </xmlData>
+      </metadataWrap>
+    </metadataObject>
+    <metadataObject ID="generalProductInformation" classification="DESCRIPTION" category="DMD">
+      <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="General Product Information">
+        <xmlData>
+          <sentinel3:generalProductInformation>
+            <sentinel3:productName>S3A_SR_2_WAT____20220823T060501_20220823T061500_20220823T072304_0599_089_077______MAR_O_NR_005.SEN3</sentinel3:productName>
+            <sentinel3:productType>SR_2_WAT___</sentinel3:productType>
+            <sentinel3:timeliness>NR</sentinel3:timeliness>
+            <sentinel3:baselineCollection>005</sentinel3:baselineCollection>
+            <sentinel3:processingBaseline>SM__WAT.005.01.01</sentinel3:processingBaseline>
+            <sentinel3:creationTime>20220823T072304</sentinel3:creationTime>
+            <sentinel3:productSize>10913195</sentinel3:productSize>
+            <sentinel3:dumpInformation>
+              <sentinel3:granuleNumber>10</sentinel3:granuleNumber>
+              <sentinel3:granulePosition>NONE</sentinel3:granulePosition>
+              <sentinel3:dumpStart>2022-08-23T04:35:00.460298Z</sentinel3:dumpStart>
+              <sentinel3:receivingGroundStation>CGS</sentinel3:receivingGroundStation>
+              <sentinel3:receivingStartTime>2022-08-23T06:22:15.945734Z</sentinel3:receivingStartTime>
+              <sentinel3:receivingStopTime>2022-08-23T06:22:41.301620Z</sentinel3:receivingStopTime>
+            </sentinel3:dumpInformation>
+            <sentinel3:dispositionMode>Operational</sentinel3:dispositionMode>
+            <sentinel3:productUnit>
+              <sentinel3:type>STRIPE</sentinel3:type>
+              <sentinel3:duration>599</sentinel3:duration>
+            </sentinel3:productUnit>
+          </sentinel3:generalProductInformation>
+        </xmlData>
+      </metadataWrap>
+    </metadataObject>
+    <metadataObject ID="measurementOrbitReference" classification="DESCRIPTION" category="DMD">
+      <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Orbit Reference">
+        <xmlData>
+          <sentinel-safe:orbitReference>
+            <sentinel-safe:orbitNumber groundTrackDirection="ascending" type="start">33930</sentinel-safe:orbitNumber>
+            <sentinel-safe:relativeOrbitNumber groundTrackDirection="ascending" type="start">77</sentinel-safe:relativeOrbitNumber>
+            <sentinel-safe:passNumber groundTrackDirection="ascending" type="start">67859</sentinel-safe:passNumber>
+            <sentinel-safe:relativePassNumber groundTrackDirection="ascending" type="start">153</sentinel-safe:relativePassNumber>
+            <sentinel-safe:cycleNumber>89</sentinel-safe:cycleNumber>
+            <sentinel-safe:phaseIdentifier>1</sentinel-safe:phaseIdentifier>
+            <sentinel-safe:elementSet>
+              <sentinel-safe:ephemeris>
+                <sentinel-safe:epoch type="UTC">2022-08-23T05:52:42.127819Z</sentinel-safe:epoch>
+                <sentinel-safe:epoch type="UT1">2022-08-23T05:52:42.108264</sentinel-safe:epoch>
+                <sentinel-safe:epoch type="TAI">2022-08-23T05:53:19.127819</sentinel-safe:epoch>
+                <sentinel-safe:position>
+                  <sentinel-safe:x>-3386557.395</sentinel-safe:x>
+                  <sentinel-safe:y>-6335409.543</sentinel-safe:y>
+                  <sentinel-safe:z>+0000000.001</sentinel-safe:z>
+                </sentinel-safe:position>
+                <sentinel-safe:velocity>
+                  <sentinel-safe:x>-1441.786158</sentinel-safe:x>
+                  <sentinel-safe:y>+0780.509060</sentinel-safe:y>
+                  <sentinel-safe:z>+7366.557082</sentinel-safe:z>
+                </sentinel-safe:velocity>
+              </sentinel-safe:ephemeris>
+              <sentinel-safe:ephemeris>
+                <sentinel-safe:epoch type="UTC">2022-08-23T07:33:41.360224Z</sentinel-safe:epoch>
+                <sentinel-safe:epoch type="UT1">2022-08-23T07:33:41.340782</sentinel-safe:epoch>
+                <sentinel-safe:epoch type="TAI">2022-08-23T07:34:18.360224</sentinel-safe:epoch>
+                <sentinel-safe:position>
+                  <sentinel-safe:x>-5765192.958</sentinel-safe:x>
+                  <sentinel-safe:y>-4285725.431</sentinel-safe:y>
+                  <sentinel-safe:z>+0000000.004</sentinel-safe:z>
+                </sentinel-safe:position>
+                <sentinel-safe:velocity>
+                  <sentinel-safe:x>-0971.278525</sentinel-safe:x>
+                  <sentinel-safe:y>+1320.995858</sentinel-safe:y>
+                  <sentinel-safe:z>+7366.638761</sentinel-safe:z>
+                </sentinel-safe:velocity>
+              </sentinel-safe:ephemeris>
+            </sentinel-safe:elementSet>
+          </sentinel-safe:orbitReference>
+        </xmlData>
+      </metadataWrap>
+    </metadataObject>
+    <metadataObject ID="measurementQualityInformation" classification="DESCRIPTION" category="DMD">
+      <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Quality Information">
+        <xmlData>
+          <sentinel-safe:qualityInformation>
+            <sentinel-safe:extension>
+              <sentinel3:productQuality>
+                <sentinel3:onlineQualityCheck>PASSED</sentinel3:onlineQualityCheck>
+                <sentinel3:degradationFlags>NON_NOMINAL_INPUT</sentinel3:degradationFlags>
+              </sentinel3:productQuality>
+            </sentinel-safe:extension>
+          </sentinel-safe:qualityInformation>
+        </xmlData>
+      </metadataWrap>
+    </metadataObject>
+    <metadataObject ID="measurementFrameSet" classification="DESCRIPTION" category="DMD">
+      <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Frame Set">
+        <xmlData>
+          <sentinel-safe:frameSet>
+            <sentinel-safe:footPrint srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+              <gml:posList>43.4628 -129.414 45.3006 -130.094 47.1351 -130.81 48.9657 -131.569 50.792 -132.374 52.6136 -133.234 54.4296 -134.157 56.2395 -135.153 58.0421 -136.235 59.8364 -137.416 61.6208 -138.717 63.3935 -140.16 65.1521 -141.774 66.8936 -143.597 68.6139 -145.678 70.3076 -148.079 71.9673 -150.884 73.5829 -154.203 75.1402 -158.182 76.6188 -163.013 76.6176 -163.019 75.1391 -158.188 73.582 -154.209 71.9665 -150.889 70.3068 -148.084 68.6132 -145.683 66.8929 -143.602 65.1515 -141.778 63.3928 -140.163 61.6202 -138.72 59.8358 -137.42 58.0415 -136.238 56.2389 -135.156 54.4291 -134.16 52.613 -133.237 50.7915 -132.377 48.9652 -131.571 47.1346 -130.813 45.3002 -130.096 43.4623 -129.416 43.4628 -129.414</gml:posList>
+            </sentinel-safe:footPrint>
+          </sentinel-safe:frameSet>
+        </xmlData>
+      </metadataWrap>
+    </metadataObject>
+    <metadataObject ID="sralProductInformation" classification="DESCRIPTION" category="DMD">
+      <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="">
+        <xmlData>
+          <sral:sralProductInformation>
+            <sral:ellipsoidSemiMajorAxis>6378137.000000</sral:ellipsoidSemiMajorAxis>
+            <sral:ellipsoidFlattening>0.003353</sral:ellipsoidFlattening>
+            <sral:lrmModePercentage>0</sral:lrmModePercentage>
+            <sral:sarModePercentage>100</sral:sarModePercentage>
+            <sral:landPercentage>10</sral:landPercentage>
+            <sral:closedSeaPercentage>0</sral:closedSeaPercentage>
+            <sral:continentalIcePercentage>0</sral:continentalIcePercentage>
+            <sral:openOceanPercentage>90</sral:openOceanPercentage>
+            <sral:landWaterMaskFlag>TRUE</sral:landWaterMaskFlag>
+            <sral:bandDescriptions bands="2">
+              <sentinel3:band name="C">
+                <sentinel3:centralFrequency>5409999872.000000</sentinel3:centralFrequency>
+                <sentinel3:bandwidth>290000000.000000</sentinel3:bandwidth>
+              </sentinel3:band>
+              <sentinel3:band name="Ku">
+                <sentinel3:centralFrequency>13575000064.000000</sentinel3:centralFrequency>
+                <sentinel3:bandwidth>320000000.000000</sentinel3:bandwidth>
+              </sentinel3:band>
+            </sral:bandDescriptions>
+          </sral:sralProductInformation>
+        </xmlData>
+      </metadataWrap>
+    </metadataObject>
+  </metadataSection>
+  <dataObjectSection>
+    <dataObject ID="enhancedMeasurementData">
+      <byteStream mimeType="application/x-netcdf" size="8798960">
+        <fileLocation locatorType="URL" href="enhanced_measurement.nc" textInfo="Measurement Data Object File"/>
+        <checksum checksumName="MD5">2c6e3923587decb0f86fa85b268ee867</checksum>
+      </byteStream>
+    </dataObject>
+    <dataObject ID="standardMeasurementData">
+      <byteStream mimeType="application/x-netcdf" size="1825951">
+        <fileLocation locatorType="URL" href="standard_measurement.nc" textInfo="Measurement Data Object File"/>
+        <checksum checksumName="MD5">c1a2feb1075b2f0bbf124c9c7689f86c</checksum>
+      </byteStream>
+    </dataObject>
+    <dataObject ID="reducedMeasurementData">
+      <byteStream mimeType="application/x-netcdf" size="288284">
+        <fileLocation locatorType="URL" href="reduced_measurement.nc" textInfo="Measurement Data Object File"/>
+        <checksum checksumName="MD5">de823b79bcf0a88987fc29fe3f3de2ac</checksum>
+      </byteStream>
+    </dataObject>
+  </dataObjectSection>
+</xfdu:XFDU>

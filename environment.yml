@@ -1,6 +1,6 @@
 # copyright: 2022 EUMETSAT
 # license: LICENSE.txt
-name: cmts_learn_poseidon4
+name: cmts_learn_s6
 channels:
   - conda-forge
   - cmts

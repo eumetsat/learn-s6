@@ -1,0 +1,39 @@
+# Component information
+name: learn-s6
+description: Compendium of training content associated with the Copernicus Sentinel-6 Poseidon-4 sensor in the marine domain.
+copyright: 2022 EUMETSAT
+license_spdx: MIT
+date: 01-01-2022
+home_url: https://gitlab.eumetsat.int/eumetlab/ocean/sensors/learn-s6
+
+# Package IPR documentation
+license_text_file: LICENCE.txt
+ 
+# File(s) associated to this component
+
+about_resource: ./1_S6_introductory/1_1_S6_data_access_SFTP.ipynb
+about_resource: ./1_S6_introductory/1_2_S6_file_structure.ipynb
+about_resource: ./1_S6_introductory/1_3_S6_coverage.ipynb
+about_resource: ./1_S6_introductory/1_4_S6_tracks.ipynb
+about_resource: ./1_S6_introductory/1_5_S6_waveforms.ipynb
+about_resource: ./1_S6_introductory/1_6_S6_SSHA.ipynb
+about_resource: ./1_S6_introductory/1_7_S6_SWH.ipynb
+about_resource: ./1_S6_introductory/1_8_S6_WS.ipynb
+about_resource: ./2_S6_advanced/2_1_S6_advanced_data_access_eumdac.ipynb
+about_resource: ./2_S6_advanced/2_2_acquire_S6_full_cycle.ipynb
+about_resource: ./img/S6_orbit.png
+about_resource: ./img/thumbs/1_1_S6_data_access_thumb.png
+about_resource: ./img/thumbs/1_2_S6_file_structure_thumb.png
+about_resource: ./img/thumbs/1_3_S6_coverage_thumb.png
+about_resource: ./img/thumbs/1_4_S6_tracks_thumb.png
+about_resource: ./img/thumbs/1_5_S6_waveforms_thumb.png
+about_resource: ./img/thumbs/1_6_S6_SSHA_thumb.png
+about_resource: ./img/thumbs/1_7_S6_SWH_thumb.png
+about_resource: ./img/thumbs/1_8_S6_WS_thumb.png
+about_resource: ./img/thumbs/2_1_S6_advanced_data_access_eumdac_thumb.png
+about_resource: ./img/thumbs/2_2_acquire_S6_full_cycle_thumb.png
+about_resource: AUTHORS.txt
+about_resource: Index.ipynb
+about_resource: README.md
+about_resource: environment.yml
+about_resource: learn-s6.ABOUT

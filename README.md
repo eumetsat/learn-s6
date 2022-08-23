@@ -1,7 +1,7 @@
-# Learn POSEIDON4
+# Learn Sentinel-6 Altimetry
 
-The **learn-poseidon4** module consists of a collection of python-based Jupyter-notebooks 
-design to demonstrate the capability of the Poseidon-4 Altimetr (P4), carried 
+The **learn-s6** module consists of a collection of python-based Jupyter-notebooks 
+design to demonstrate the capability of the Poseidon-4 altimeter, carried 
 by the Sentinel-6 satellite, and to help users begin to work with its data at 
 level-1 and level-2. 
 
@@ -66,7 +66,7 @@ the Anaconda Navigator). Once you have opened a terminal/prompt, you should navi
 to the directory where you want to put the code. Once you are in the correct directory, 
 you should run the following command;
 
-`git clone --recurse-submodules --remote-submodules https://gitlab.eumetsat.int/eumetlab/oceans/ocean-training/sensors/learn-poseidon4.git`
+`git clone --recurse-submodules --remote-submodules https://gitlab.eumetsat.int/eumetlab/oceans/ocean-training/sensors/learn-s6.git`
 
 This will make a local copy of all the relevant files.
 
@@ -101,10 +101,10 @@ To create the environment, run:
 
 `conda env create -f environment.yml`
 
-This will create a Python 3.8 environment called **cmts_learn_poseidon4**. The environment 
+This will create a Python 3.8 environment called **cmts_learn_s6**. The environment 
 won't be activated by default. To activate it, run:
 
-`conda activate cmts_learn_poseidon4`
+`conda activate cmts_learn_s6`
 
 Now you are ready to go!
 
@@ -155,16 +155,16 @@ at ops@eumetsat.int. We welcome your feedback!
 
 **Installation:**
 
-`git clone --recurse-submodules --remote-submodules https://gitlab.eumetsat.int/eumetlab/oceans/ocean-training/sensors/learn-poseidon4.git`
+`git clone --recurse-submodules --remote-submodules https://gitlab.eumetsat.int/eumetlab/oceans/ocean-training/sensors/learn-s6.git`
 
 **Create and set environment**
 
 `conda env create -f environment.yml` \
-`conda activate cmts_learn_poseidon4`
+`conda activate cmts_learn_s6`
 
 **WEkEO SPECIFIC**
 
-`ipython kernel install --user --name=cmts_learn_poseidon4`
+`ipython kernel install --user --name=cmts_learn_s6`
 
 **Activate extensions (1st run in environment, only)**
 
