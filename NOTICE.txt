@@ -253,7 +253,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 ************************************************************
 
-jupyter-notebook-6.4.8 [Dependency for the full package] (BSD-3-Clause)
+jupyter-notebook-6.4.11 [Dependency for the full package] (BSD-3-Clause)
 
 https://github.com/jupyter/notebook
 
