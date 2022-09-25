@@ -77,7 +77,7 @@ This will make a local copy of all the relevant files.
 
 ## Usage
 
-This collection supports Python 3.8. Although many options are possible, the 
+This collection supports Python 3.9. Although many options are possible, the 
 authors highly recommend that users install the appropriate Anaconda package 
 for their operating system. In order to ensure that you have all the required 
 dependencies, we recommend that you build a suitable Python environment, as 
@@ -101,7 +101,7 @@ To create the environment, run:
 
 `conda env create -f environment.yml`
 
-This will create a Python 3.8 environment called **cmts_learn_s6**. The environment 
+This will create a Python environment called **cmts_learn_s6**. The environment 
 won't be activated by default. To activate it, run:
 
 `conda activate cmts_learn_s6`
