@@ -33,7 +33,7 @@ wheels/
 *DS_Store*
 
 # Repo specific
-1_P4_introductory/products/
-1_P4_introductory/*.png
-2_P4_advanced/products/
-2_P4_advanced/*.png
+1_S6_introductory/products/
+1_S6_introductory/*.png
+2_S6_advanced/products/
+2_S6_advanced/*.png
