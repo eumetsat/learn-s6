@@ -11,7 +11,8 @@ license_text_file: LICENSE.txt
  
 # File(s) associated to this component
 
-about_resource: ./1_S6_introductory/1_1_S6_data_access_SFTP.ipynb
+about_resource: ./1_S6_introductory/1_1a_S6_data_access_SFTP.ipynb
+about_resource: ./1_S6_introductory/1_1b_S6_data_access_DS.ipynb
 about_resource: ./1_S6_introductory/1_2_S6_file_structure.ipynb
 about_resource: ./1_S6_introductory/1_3_S6_coverage.ipynb
 about_resource: ./1_S6_introductory/1_4_S6_tracks.ipynb
@@ -21,8 +22,12 @@ about_resource: ./1_S6_introductory/1_7_S6_SWH.ipynb
 about_resource: ./1_S6_introductory/1_8_S6_WS.ipynb
 about_resource: ./2_S6_advanced/2_1_S6_advanced_data_access_eumdac.ipynb
 about_resource: ./2_S6_advanced/2_2_acquire_S6_full_cycle.ipynb
+about_resource: ./2_S6_advanced/2_3_S6_coastal_waveforms.ipynb
 about_resource: ./img/S6_orbit.png
-about_resource: ./img/thumbs/1_1_S6_data_access_thumb.png
+about_resource: ./img/Algeria_Coast.png
+about_resource: ./img/Fort_Boyard.png
+about_resource: ./img/thumbs/1_1a_S6_data_access_SFTP_thumb.png
+about_resource: ./img/thumbs/1_1b_S6_data_access_DS_thumb.png
 about_resource: ./img/thumbs/1_2_S6_file_structure_thumb.png
 about_resource: ./img/thumbs/1_3_S6_coverage_thumb.png
 about_resource: ./img/thumbs/1_4_S6_tracks_thumb.png
