@@ -1,15 +1,15 @@
 # Copyright holder
-copyright: 2022 EUMETSAT
+copyright: 2023 EUMETSAT
 license: LICENSE.txt
  
 # List of development authors
 Ben Loveday (Innoflair UG)
 Hayley Evers-King (EUMETSAT)
+Vinca Rosmorduc (CLS)
 
 # List of contributory authors
 Aida Alvera-Azcarate (GHER)
 Vittorio Brando (CNR)
-Vinca Rosmorduc (CLS)
 Ana Ruescas (Brockmann Consult)
 
 # Support
