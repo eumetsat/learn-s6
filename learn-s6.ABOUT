@@ -3,7 +3,7 @@ name: learn-s6
 description: Compendium of training content associated with the Copernicus Sentinel-6 Poseidon-4 sensor in the marine domain.
 copyright: 2023 EUMETSAT
 license_spdx: MIT
-date: 01-07-2023
+date: 01-01-2023
 home_url: https://gitlab.eumetsat.int/eo-lab-usc-open/ocean/sensors/learn-s6
 
 # Package IPR documentation
