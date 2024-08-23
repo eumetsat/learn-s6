@@ -40,6 +40,9 @@ about_resource: ./img/thumbs/1_7_S6_SWH_thumb.png
 about_resource: ./img/thumbs/1_8_S6_WS_thumb.png
 about_resource: ./img/thumbs/2_1_S6_advanced_data_access_eumdac_thumb.png
 about_resource: ./img/thumbs/2_2_acquire_S6_full_cycle_thumb.png
+about_resource: ./img/thumbs/2_3_S6_coastal_waveforms_thumb.png
+about_resource: ./img/thumbs/2_4_iono_corr_solarstorms_thumb.png
+about_resource: ./img/thumbs/2_5_acquire_S6_available_cycles_thumb.png
 about_resource: CHANGELOG
 about_resource: CONTRIBUTING.txt
 about_resource: AUTHORS.txt
